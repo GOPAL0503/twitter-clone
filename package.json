@@ -4,7 +4,7 @@
   "main": " backend/server.js",
   "scripts": {
     "start": "node backend/server.js",
-    "build":"npm install && npm install --include =dev --prefix frontend && npm run build --prefix frontend",
+    "build": "npm install && npm install --include =dev --prefix frontend && npm run build --prefix frontend",
     "dev": "nodemon backend/server.js"
   },
   "keywords": [],
@@ -23,9 +23,11 @@
     "mongoose": "^8.9.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
     "tanstack-query": "^1.0.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-private-property-in-object": "^7.25.9",
     "nodemon": "^3.1.9"
   },
   "type": "module"
