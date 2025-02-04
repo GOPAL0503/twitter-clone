@@ -16,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +41,8 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "daisyui": "^4.12.23",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^3.4.17"
-  }
+  },
+  "homepage": "https://your-github-username.github.io/repo-name"
 }
